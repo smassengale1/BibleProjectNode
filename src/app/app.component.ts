@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ApiService} from "./shared/api/api.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BibleProjectNode';
+
+  constructor(private apiService: ApiService) {
+  }
+
+  getHealthCheck(): void {
+    this.apiService.getHealthCheck();
+  }
 }
