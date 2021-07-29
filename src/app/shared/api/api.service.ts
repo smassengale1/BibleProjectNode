@@ -1,11 +1,12 @@
 import {Injectable, OnInit} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService implements OnInit{
-
+  url = environment.api;
   constructor(private http: HttpClient) {
   }
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {ApiService} from "./shared/api/api.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,8 @@ import {ApiService} from "./shared/api/api.service";
 export class AppComponent {
   title = 'BibleProjectNode';
 
-  constructor(private apiService: ApiService) {
+  constructor(private router: Router) {
+    this.router.navigate(['admin']);
   }
 
-  getHealthCheck(): void {
-    this.apiService.getHealthCheck();
-  }
 }
