@@ -39,7 +39,7 @@ export class VerseTypeAdminComponent implements OnInit, AfterViewInit{
     this.verseService.getVersesToXref().subscribe(res => {
       this.dataSource.data = res;
       this.verses = res;
-
+      console.log(this.verses)
     })
   }
 
@@ -47,11 +47,15 @@ export class VerseTypeAdminComponent implements OnInit, AfterViewInit{
     this.dataSource.paginator = this.paginator;
   }
 
-  openVerseDialog(verse: Verse) {
+  openVerseDialog(verse: VerseType) {
     this.dialog.open(VerseDialogComponent, {
       data : { verse: verse }
     });
   }
+
+
+
+
 
 
 }

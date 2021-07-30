@@ -8,10 +8,10 @@ export interface Verse {
   previous: string;
   text: string;
   biblePosition: number;
+  verseType: VerseType
 }
 
 export interface VerseType {
-  verseId: string;
   anxiety: boolean;
   depressed: boolean;
   forgotten: boolean;
@@ -32,6 +32,7 @@ export interface VerseType {
   jealous: boolean;
   standalone: boolean;
   none: boolean;
+  completed: boolean;
 }
 
 

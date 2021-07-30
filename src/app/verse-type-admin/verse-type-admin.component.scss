@@ -59,14 +59,18 @@
   }
 
   .example-verse-diagram {
-    width: 500px;
     text-align: center;
-
-    border: 1px solid black;
+    font-size: 15px;
+    overflow-wrap: break-word;
     padding: 10px;
     font-weight: lighter;
     margin: 8px 0;
   }
+
+  .noTagsForVerse {
+    opacity: .5;
+  }
+
 
   .example-verse-symbol {
     font-size: 15px;

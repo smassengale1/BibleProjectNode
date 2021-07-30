@@ -17,6 +17,7 @@ import {MatIconModule} from "@angular/material/icon";
 import { VerseDialogComponent } from './verse-type-admin/verse-dialog/verse-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatChipsModule} from "@angular/material/chips";
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     MatIconModule,
     MatDialogModule,
     MatPaginatorModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
