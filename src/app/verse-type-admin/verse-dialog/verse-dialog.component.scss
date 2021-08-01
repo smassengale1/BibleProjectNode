@@ -1,0 +1,35 @@
+#title {
+  margin: 0;
+  letter-spacing: .5px;
+  font-size: 25px;
+  font-weight: 300;
+  padding: 5px;
+}
+#verseForm {
+  width: 100%;
+}
+
+#verseText {
+  color: black;
+  letter-spacing: .5px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+.verseTypes {
+  -moz-column-count: 3;
+  -moz-column-gap: 25px;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 25px;
+
+}
+
+.verseTypeCheckBox {
+  padding: 10px;
+}
+

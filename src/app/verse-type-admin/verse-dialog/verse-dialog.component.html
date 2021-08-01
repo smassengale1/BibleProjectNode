@@ -1,1 +1,27 @@
-<p>verse-dialog works!</p>
+<div class="verse-container" [formGroup]="form">
+  <span mat-dialog-title id="title">{{data.verse.reference}}</span>
+  <div mat-dialog-content>
+    <mat-form-field id="verseForm" appearance="fill" (click)="form.controls.verseControl.enable()" >
+      <mat-label>Verse</mat-label>
+      <textarea matInput formControlName="verseControl" id="verseText"></textarea>
+    </mat-form-field>
+  </div>
+  <hr>
+  <form class="verseTypeContainer">
+      <h3>Verse Type</h3>
+      <ul class="verseTypes">
+          <li formArrayName="verseTypes" *ngFor="let type of typeFormArray.controls; let i = index" class="verseTypeCheckBox">
+            <mat-checkbox [formControlName]="i" >{{verseTypeKeys[i]}}</mat-checkbox>
+          </li>
+      </ul>
+  </form>
+  <hr>
+  <div class="verseTypeActions">
+    <div fxLayout="row" fxLayoutAlign="center space-between">
+      <button mat-button > cancel </button>
+      <button mat-button (click)="submit()"> update </button>
+    </div>
+  </div>
+</div>
+
+

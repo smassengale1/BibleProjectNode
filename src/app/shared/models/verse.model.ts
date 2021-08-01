@@ -8,11 +8,11 @@ export interface Verse {
   previous: string;
   text: string;
   biblePosition: number;
-  verseType: VerseType
+  verseTypes: String[] // should be enum of types
 }
 
 export interface VerseType {
-  anxiety: boolean;
+  anxiety: string;
   depressed: boolean;
   forgotten: boolean;
   guilty: boolean;
@@ -34,5 +34,30 @@ export interface VerseType {
   none: boolean;
   completed: boolean;
 }
+
+export const VerseTypeKeys = [
+  'anxiety',
+  'depressed',
+  'forgotten',
+  'guilty',
+  'unworthy',
+  'encouragement',
+  'faith',
+  'thankful',
+  'love',
+  'prayer',
+  'Jesus',
+  'God',
+  'Angels',
+  'satan',
+  'sin',
+  'lust',
+  'anger',
+  'jealous',
+  'standalone',
+  'none',
+  'completed',
+]
+
 
 
