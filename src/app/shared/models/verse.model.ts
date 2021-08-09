@@ -8,56 +8,41 @@ export interface Verse {
   previous: string;
   text: string;
   biblePosition: number;
-  verseTypes: String[] // should be enum of types
+  verseTypes: string[] // should be enum of types
 }
 
-export interface VerseType {
-  anxiety: string;
-  depressed: boolean;
-  forgotten: boolean;
-  guilty: boolean;
-  unworthy: boolean;
-  encouragement: boolean;
-  faith: boolean;
-  thankful: boolean;
-  love: boolean;
-  prayer: boolean;
-  Jesus: boolean;
-  God: boolean;
-  Angels: boolean;
-  satan: boolean;
-  sin: boolean;
-  lust: boolean;
-  anger: boolean;
-  jealous: boolean;
-  standalone: boolean;
-  none: boolean;
+// Need to update to be enum
+export enum VerseType {
+  anxiety = "anxiety",
+  depressed = "depressed",
+  forgotten = "forgotten",
+  guilty = "guilty",
+  unworthy = "unworthy",
+  encouragement = "encouragement",
+  faith = "faith",
+  thankful = "thankful",
+  love = "love",
+  strength = "strength",
+  prayer = "prayer",
+  jesus = "jesus",
+  god = "god",
+  sin = "sin",
+  lust = "lust",
+  anger = "anger",
+  jealous = "jealous",
+  standalone = "standalone",
+  needsNext = "needsNext",
+  none = "none",
+  completed = "completed",
+}
+
+export interface VerseFilter {
+  limit: number;
+  verseTypes: string[];
+  testament: "new" | "old";
   completed: boolean;
 }
 
-export const VerseTypeKeys = [
-  'anxiety',
-  'depressed',
-  'forgotten',
-  'guilty',
-  'unworthy',
-  'encouragement',
-  'faith',
-  'thankful',
-  'love',
-  'prayer',
-  'Jesus',
-  'God',
-  'Angels',
-  'satan',
-  'sin',
-  'lust',
-  'anger',
-  'jealous',
-  'standalone',
-  'none',
-  'completed',
-]
 
 
 

@@ -15,6 +15,7 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
+  height: 100px;
 }
 
 
@@ -29,7 +30,17 @@
 
 }
 
-.verseTypeCheckBox {
-  padding: 10px;
+
+.formErrors {
+  color: indianred;
+  font-size: 13px;
 }
+
+#actions {
+  display: flex;
+  flex-direction: row;
+  place-content: center space-around;
+  align-items: stretch;
+}
+
 

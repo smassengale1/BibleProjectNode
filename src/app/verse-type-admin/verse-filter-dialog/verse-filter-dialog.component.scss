@@ -1,0 +1,55 @@
+.verseTypes {
+  -moz-column-count: 3;
+  -moz-column-gap: 25px;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 25px;
+}
+
+#top-row {
+
+  #top-row-filters{
+    display: flex;
+    flex-direction: row;
+    place-content: center space-between;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+
+
+
+  #testamentForm {
+    width: 150px;
+  }
+
+  #chapterForm {
+    width: 100px;
+  }
+}
+
+#limitForm {
+  width: 150px;
+}
+
+#radioGroupLabel {
+  margin-bottom: 8px;
+  padding: 2px;
+  margin-top: 12px;
+}
+
+#verseLimitFilter {
+  display: flex;
+  flex-direction: row;
+  place-content: center start;
+  align-items: stretch;
+  gap: 60px;
+}
+
+
+
+
+
+
+

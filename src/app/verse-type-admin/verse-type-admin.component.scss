@@ -58,6 +58,18 @@
 
   }
 
+  #tableToolBar {
+    height: 50px;
+  }
+
+  #searchBar {
+    padding: 0;
+  }
+
+  #tableActions {
+    padding: 0;
+  }
+
   .example-verse-diagram {
     text-align: center;
     font-size: 15px;
@@ -69,6 +81,13 @@
 
   .noTagsForVerse {
     opacity: .5;
+  }
+
+  #bibleName{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
   }
 
 
@@ -85,6 +104,10 @@
 
   .example-verse-description-attribution {
     opacity: 0.5;
+  }
+
+  .activeFilter {
+    color: deeppink;
   }
 
 }
